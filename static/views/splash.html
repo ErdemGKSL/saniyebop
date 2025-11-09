@@ -64,7 +64,7 @@
             word-break: break-word;
             padding: 0 16px;
             position: absolute;
-            font-size: 14px
+            font-size: 14px;
         }
 
         p {
@@ -82,7 +82,7 @@
 <body>
     <div class="wrapper">
         <img draggable="false" src="equibop://assets/splash" alt="" role="presentation" />
-        <p>Loading Equibop...</p>
+        <p>Loading Saniyebop..</p>
         <p class="message"></p>
 
         <div id="progress-section">
@@ -96,9 +96,9 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        const messageElement = document.querySelector('.message');
+        const messageElement = document.querySelector(".message");
         VesktopSplashNative.onUpdateMessage(message => {
             messageElement.textContent = message;
-        })
+        });
     });
 </script>

@@ -6,7 +6,6 @@
 
 import { addPatch } from "../patches/shared";
 import SaniyebopBadge from "./SaniyebopBadge";
-import UnlimitedAccounts from "./UnlimitedAccounts";
 
 console.log("[Equibop Plugins] Plugin index loaded");
 console.log("[Equibop Plugins] Vencord available?", !!Vencord);
@@ -18,7 +17,7 @@ console.log("[Equibop Plugins] Vencord.Plugins available?", !!Vencord?.Plugins);
  */
 function registerPlugin(plugin: any) {
     console.log(`[Equibop] Attempting to register plugin: ${plugin.name}`);
-    
+
     // Register patches with Vencord
     if (plugin.patches) {
         addPatch({
