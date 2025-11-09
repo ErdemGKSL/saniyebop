@@ -1,8 +1,8 @@
 {
-    "name": "equibop",
+    "name": "saniyebop",
     "version": "3.1.0",
     "private": true,
-    "description": "Equibop is a custom Discord desktop app",
+    "description": "Saniyebop is a custom Discord desktop app",
     "keywords": [],
     "homepage": "https://equicord.org",
     "license": "GPL-3.0-or-later",
@@ -64,9 +64,9 @@
         "bun": ">=1.3.0"
     },
     "build": {
-        "appId": "org.equicord.equibop",
-        "productName": "Equibop",
-        "executableName": "equibop",
+        "appId": "org.sny.saniyebop",
+        "productName": "Saniyebop",
+        "executableName": "saniyebop",
         "files": [
             "!*",
             "!node_modules",
@@ -115,17 +115,24 @@
                         "x64",
                         "arm64"
                     ]
+                },
+                {
+                    "target": "pacman",
+                    "arch": [
+                        "x64", 
+                        "arm64"
+                    ]
                 }
             ],
             "desktop": {
                 "entry": {
-                    "Name": "Equibop",
+                    "Name": "Saniyebop",
                     "GenericName": "Internet Messenger",
                     "Type": "Application",
                     "Categories": "Network;InstantMessaging;Chat;",
-                    "Keywords": "discord;vencord;electron;chat;equibop",
+                    "Keywords": "discord;vencord;electron;chat;equibop;saniyebop",
                     "MimeType": "x-scheme-handler/discord",
-                    "StartupWMClass": "equibop"
+                    "StartupWMClass": "saniyebop"
                 }
             }
         },
